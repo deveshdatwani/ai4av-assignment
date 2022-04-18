@@ -1,4 +1,10 @@
-#### Solution for AI4AV assignment 
+### Dataset
+
+I have ignored the dataset files in gitignore folder as they are too large for a github repo. Thet also contain some cfg files.
+
+
+
+### Solution for AI4AV assignment 
 
 Detecting Traffic Lights using YOLO algorithm
 
@@ -8,7 +14,7 @@ I trained the YOLO model on Bosch dataset with YOLO's pre-trained weights loaded
 
 For this, I first cloned Bosch's bstld repo which has scripts to convert the label into YOLO format
 
-#### Config
+### Config
 
 Next was to change classes in the YOLO categorie config config files. The classes were as follows 
 
@@ -30,11 +36,11 @@ cp ../cfg/yolov3-tiny.cfg yolov3-tiny-bosch.cfg
 
 Due to computational limitations, I trained the model only on 7000 images during which I achieved an mAP for 0.37
 
-#### Sample Prediction
+### Sample Prediction
 
 ![sample](https://raw.githubusercontent.com/deveshdatwani/ai4av-assignment/master/images.jpeg)
 
-#### To load weights on YOLO 
+### To load weights on YOLO 
 
 ```
 ./darknet detector train traffic-lights/voc-bosch.data traffic-lights/yolov3-tiny-bosch.cfg darknet53.conv.74
