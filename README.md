@@ -23,4 +23,4 @@ Next, due to computational limitations, I trained the model only on 7000 images 
 
 The best result of predictions is shown below 
 
-[!](https://github.com/deveshdatwani/ai4av-assignment/blob/master/images.jpeg)
+[!](https://raw.githubusercontent.com/deveshdatwani/ai4av-assignment/master/images.jpeg)
