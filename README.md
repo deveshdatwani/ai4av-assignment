@@ -29,6 +29,6 @@ The best result of predictions is shown below
 
 #### To load weights on YOLO 
 
-''' 
+```
 ./darknet detector train traffic-lights/voc-bosch.data traffic-lights/yolov3-tiny-bosch.cfg darknet53.conv.74
-'''
+```
