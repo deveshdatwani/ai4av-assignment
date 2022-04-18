@@ -21,9 +21,16 @@ GreenRight
 Yellow
 off
 
-Next, due to computational limitations, I trained the model only on 7000 images during which I achieved an mAP for 0.37
+To load configs from darknet framework
 
-The best result of predictions is shown below 
+``` 
+cp ../cfg/yolov3-tiny.cfg yolov3-tiny-bosch.cfg
+
+```
+
+Due to computational limitations, I trained the model only on 7000 images during which I achieved an mAP for 0.37
+
+#### Sample Prediction
 
 ![sample](https://raw.githubusercontent.com/deveshdatwani/ai4av-assignment/master/images.jpeg)
 
