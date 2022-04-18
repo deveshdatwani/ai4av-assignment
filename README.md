@@ -8,6 +8,8 @@ I trained the YOLO model on Bosch dataset with YOLO's pre-trained weights loaded
 
 For this, I first cloned Bosch's bstld repo which has scripts to convert the label into YOLO format
 
+#### Config
+
 Next was to change classes in the YOLO categorie config config files. The classes were as follows 
 
 RedLeft
@@ -24,3 +26,9 @@ Next, due to computational limitations, I trained the model only on 7000 images 
 The best result of predictions is shown below 
 
 ![sample](https://raw.githubusercontent.com/deveshdatwani/ai4av-assignment/master/images.jpeg)
+
+#### To load weights on YOLO 
+
+''' 
+./darknet detector train traffic-lights/voc-bosch.data traffic-lights/yolov3-tiny-bosch.cfg darknet53.conv.74
+'''
