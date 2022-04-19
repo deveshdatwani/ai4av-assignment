@@ -22,6 +22,7 @@ For this, I first cloned Bosch's bstld repo which has scripts to convert the lab
 4. Change YOLO classes only to traffic lights
 5. Split the dataset into train and test split using the train_test_split module written
 6. This creates train.txt and test.txt
+7. Finally train the model with the given command
 
 
 
@@ -47,12 +48,19 @@ cp ../cfg/yolov3-tiny.cfg yolov3-tiny-bosch.cfg
 
 Due to computational limitations, I trained the model only on 7000 images during which I achieved an mAP for 0.37
 
-### Sample Prediction
-
-![sample](https://raw.githubusercontent.com/deveshdatwani/ai4av-assignment/master/images.jpeg)
 
 ### To load weights on YOLO 
 
 ```
 ./darknet detector train traffic-lights/voc-bosch.data traffic-lights/yolov3-tiny-bosch.cfg darknet53.conv.74
 ```
+
+#### Training
+
+```
+./darknet detector train traffic-lights/voc-bosch.data traffic-lights/yolov3-tiny-bosch.cfg darknet53.conv.74
+```
+
+### Sample Prediction
+
+![sample](https://raw.githubusercontent.com/deveshdatwani/ai4av-assignment/master/images.jpeg)
