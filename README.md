@@ -2,6 +2,7 @@
 
 I have ignored the dataset files in gitignore folder as they are too large for a github repo. The data directory also contain some cfg files which are essential to build the solution and train YOLO.
 
+![sample0](https://raw.githubusercontent.com/deveshdatwani/ai4av-assignment/master/yologo_2.png)
 
 ## Overview of Solution for AI4AV assignment 
 Detecting Traffic Lights using YOLO algorithm
