@@ -1,11 +1,9 @@
-### Dataset
+### NOTE:
 
-I have ignored the dataset files in gitignore folder as they are too large for a github repo. Thet also contain some cfg files.
+I have ignored the dataset files in gitignore folder as they are too large for a github repo. The data directory also contain some cfg files which are essential to build the solution and train YOLO.
 
 
-
-### Solution for AI4AV assignment 
-
+## Overview of Solution for AI4AV assignment 
 Detecting Traffic Lights using YOLO algorithm
 
 The YOLO algorithm is a cutting edge technology for object detection and localisation
@@ -14,9 +12,21 @@ I trained the YOLO model on Bosch dataset with YOLO's pre-trained weights loaded
 
 For this, I first cloned Bosch's bstld repo which has scripts to convert the label into YOLO format
 
+
+### Steps in training YOLO model on Bosch dataset
+
+1. Prepare the dataset by extracting the images in rgb/train files
+2. clone bosch's git repo on traffic light detection
+3. Create a traffic-lights folder under YOLO's darknet repo and convert VOC labels to YOLO type labels using the voc_label.py script.
+4. Change YOLO classes only to traffic lights
+5. Split the dataset into train and test split using the train_test_split module written
+6. This creates train.txt and test.txt
+
+
+
 ### Config
 
-Next was to change classes in the YOLO categorie config config files. The classes were as follows 
+classes in the YOLO categorie config config files were altered as following. 
 
 RedLeft
 Red
